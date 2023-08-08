@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view />
 </template>
 
+<style lang="scss">
+// Import Main styles for this application
+@import 'styles/style';
+</style>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+// [23.08.08] test code
+import request from "axios";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  mounted() {
+    request('http://localhost:8080/api/hello', function (error, response, body) {
+      window.console.log('error: ', error);
+      window.console.log('statusCode: ', response && response.statusCode);
+      window.console.log('body: ', body);
+    });
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

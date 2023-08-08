@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
+  will-change: auto;
+  @include transition(padding .15s);
+}
+
+body {
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+
+.dp__instance_calendar{
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.dp__input{
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.form-control{
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.form-label{
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.form-select{
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.btn {
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
+.input-group {
+  font-size: 0.75rem !important;/* font-size 1em = 10px 브라우저의 기본 설정 */
+}
