@@ -36,7 +36,7 @@
                   </CInputGroup>
                   <CRow class="justify-content-between">
                     <CCol style="align-self: end;">
-                      <CFormCheck id="flexCheckDefault" label="아이디 저장" style="align-self: end; margin-bottom: none;"
+                      <CFormCheck id="flexCheckDefault" label="아이디 저장" style="align-self: end; margin-bottom: 0px;"
                                   :checked="this.saveLoginID"
                                   @change="this.saveLoginID = $event.target.checked"/>
                     </CCol>
