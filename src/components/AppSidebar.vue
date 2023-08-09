@@ -63,12 +63,10 @@ import { AppSidebarNav } from './AppSidebarNav'
 import { logoNegative } from '@/assets/brand/logo-negative'
 import { sygnet } from '@/assets/brand/sygnet'
 import store from "@/store";
-import {CNavItem} from "@coreui/vue/dist/components/nav";
 
 export default {
   name: 'AppSidebar',
   components: {
-    CNavItem,
     AppSidebarNav,
   },
   methods: {
