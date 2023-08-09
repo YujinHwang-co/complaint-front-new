@@ -275,7 +275,7 @@
     "chalk" "^2.4.2"
     "js-tokens" "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.15", "@babel/parser@^7.20.7", "@babel/parser@^7.21.3", "@babel/parser@^7.22.10", "@babel/parser@^7.22.5":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.18.4", "@babel/parser@^7.20.15", "@babel/parser@^7.20.7", "@babel/parser@^7.21.3", "@babel/parser@^7.22.10", "@babel/parser@^7.22.5":
   "integrity" "sha512-lNbdGsQb9ekfsnjFGhEiF4hfFqGgfOP3H3d27re3n+CGhNuTSUEQdfWk556sTLNTloczcdM5TYF2LhzmDQKyvQ=="
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.22.10.tgz"
   "version" "7.22.10"
@@ -2142,6 +2142,15 @@
     "@vue/compiler-core" "3.3.4"
     "@vue/shared" "3.3.4"
 
+"@vue/compiler-sfc@2.7.14":
+  "integrity" "sha512-aNmNHyLPsw+sVvlQFQ2/8sjNuLtK54TC6cuKnVzAY93ks4ZBrvwQSnkkIh7bsbNhum5hJBS00wSDipQ937f5DA=="
+  "resolved" "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-2.7.14.tgz"
+  "version" "2.7.14"
+  dependencies:
+    "@babel/parser" "^7.18.4"
+    "postcss" "^8.4.14"
+    "source-map" "^0.6.1"
+
 "@vue/compiler-sfc@3.3.4":
   "integrity" "sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ=="
   "resolved" "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.3.4.tgz"
@@ -3643,7 +3652,7 @@
   dependencies:
     "cssom" "~0.3.6"
 
-"csstype@^3.1.1":
+"csstype@^3.1.0", "csstype@^3.1.1":
   "integrity" "sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ=="
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   "version" "3.1.2"
@@ -7233,7 +7242,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.10", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.2.6", "postcss@^8.3.5", "postcss@^8.4.21":
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.10", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.2.6", "postcss@^8.3.5", "postcss@^8.4.14", "postcss@^8.4.21":
   "integrity" "sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.27.tgz"
   "version" "8.4.27"
@@ -8667,6 +8676,11 @@
     "core-util-is" "1.0.2"
     "extsprintf" "^1.2.0"
 
+"vue-awesome@^3.1.0":
+  "integrity" "sha512-RRuo08A6mFye2RyLVdnODH5kyLiHANMl9EzKXZXCeMrsP4SY3nyjkQnTGlgbbVOBQuaGBMrFp9HPOJYDaVNk/w=="
+  "resolved" "https://registry.npmjs.org/vue-awesome/-/vue-awesome-3.5.4.tgz"
+  "version" "3.5.4"
+
 "vue-component-type-helpers@1.8.4":
   "integrity" "sha512-6bnLkn8O0JJyiFSIF0EfCogzeqNXpnjJ0vW/SZzNHfe6sPx30lTtTXlE5TFs2qhJlAtDFybStVNpL73cPe3OMQ=="
   "resolved" "https://registry.npmjs.org/vue-component-type-helpers/-/vue-component-type-helpers-1.8.4.tgz"
@@ -8699,6 +8713,11 @@
     "hash-sum" "^2.0.0"
     "watchpack" "^2.4.0"
 
+"vue-over-body@0.0.5":
+  "integrity" "sha512-PZUeSz1Os4FoCL1wwkNo5nyR1Hd3ECg36A4KUnd4iXGwgqcNWQcflds6G6tCf32o98IR8F8v0ogY9pBFF5c57A=="
+  "resolved" "https://registry.npmjs.org/vue-over-body/-/vue-over-body-0.0.5.tgz"
+  "version" "0.0.5"
+
 "vue-router@^4.2.4":
   "integrity" "sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.2.4.tgz"
@@ -8719,6 +8738,14 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
+"vue-tree-nav@^0.0.16":
+  "integrity" "sha512-l9YiajjAtnzbHkSM+pJO7+QB7V3DO/d/Shzq9RYmzYz+iiPfRujzVjtPy818dh3RGvq1Oqm9wfs3iVu2RZGspg=="
+  "resolved" "https://registry.npmjs.org/vue-tree-nav/-/vue-tree-nav-0.0.16.tgz"
+  "version" "0.0.16"
+  dependencies:
+    "vue-awesome" "^3.1.0"
+    "vue-over-body" "0.0.5"
+
 "vue@*", "vue@^2 || ^3.2.13", "vue@^3.0.0", "vue@^3.0.0-0", "vue@^3.0.1", "vue@^3.0.5", "vue@^3.2.0", "vue@^3.2.20", "vue@^3.2.21", "vue@^3.2.25", "vue@^3.3.4", "vue@>=3.2.0", "vue@3.3.4":
   "integrity" "sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.3.4.tgz"
@@ -8729,6 +8756,14 @@
     "@vue/runtime-dom" "3.3.4"
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
+
+"vue@^2.2.6":
+  "integrity" "sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ=="
+  "resolved" "https://registry.npmjs.org/vue/-/vue-2.7.14.tgz"
+  "version" "2.7.14"
+  dependencies:
+    "@vue/compiler-sfc" "2.7.14"
+    "csstype" "^3.1.0"
 
 "vue3-perfect-scrollbar@^1.6.1":
   "integrity" "sha512-r9wfxlFwVyHXMPKG0PnR7fDfJPQ20KEVzKQfSU5by2WKYz2PwV0bTfyfejmEyZXsXL0O8VtSWtgxfPuFR2AGOg=="

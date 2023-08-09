@@ -22,6 +22,30 @@
         </div>
       </CRow>
     </CSidebarBrand>
+    <!-- sidebar 추가 개발하기-->
+    <CSidebarNav>
+      <li class="nav-title">Complaint</li>
+      <CNavItem href="/">
+        <CIcon  customClassName="nav-icon" icon="cil-speedometer"/>
+        Dashboard
+      </CNavItem>
+      <CNavItem href="#">
+        <CIcon  customClassName="nav-icon" icon="cil-speedometer"/>
+        With badge
+        <CBadge color="primary ms-auto">Badge</CBadge>
+      </CNavItem>
+      <CNavGroup>
+        <template #togglerContent>
+          <CIcon  customClassName="nav-icon" icon="cil-settings"/> Nav dropdown
+        </template>
+        <CNavItem href="#">
+          <CIcon  customClassName="nav-icon" icon="cil-settings"/> Nav dropdown item
+        </CNavItem>
+        <CNavItem href="#">
+          Nav dropdown item
+        </CNavItem>
+      </CNavGroup>
+    </CSidebarNav>
 
     <perfect-scrollbar style="margin-bottom:50px;">
       <AppSidebarNav />
@@ -39,10 +63,12 @@ import { AppSidebarNav } from './AppSidebarNav'
 import { logoNegative } from '@/assets/brand/logo-negative'
 import { sygnet } from '@/assets/brand/sygnet'
 import store from "@/store";
+import {CNavItem} from "@coreui/vue/dist/components/nav";
 
 export default {
   name: 'AppSidebar',
   components: {
+    CNavItem,
     AppSidebarNav,
   },
   methods: {

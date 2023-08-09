@@ -24,6 +24,7 @@
     "core-js": "^3.8.3",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
+    "vue-tree-nav": "^0.0.16",
     "vue3-perfect-scrollbar": "^1.6.1",
     "vue3-tree": "^0.11.5",
     "vuejs-paginate-next": "^1.0.2",
