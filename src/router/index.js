@@ -16,12 +16,11 @@ const routes = [
         component: DefaultLayout,
         children: [
             {
-                path: '/admin',
+                path: '/',
                 name: 'Dashboard',
                 component: () =>
                     import(/* webpackChunkName: "dashboard" */ '@/views/Dashboard.vue'),
             },
-            // /** 운영자 관리 */
             // {
             //     path: '/admin/mgr/info/mgrInfo',
             //     name: '운영자 관리',
