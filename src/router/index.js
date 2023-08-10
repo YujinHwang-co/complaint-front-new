@@ -7,7 +7,13 @@ const routes = [
     {
         path: '/login',
         name: 'Login',
-        component: () => import('@/views/admin/Login.vue'),
+        component: () => import('@/views/mbr/Login.vue'),
+        meta: { unauthorized: true }
+    },
+    {
+        path: '/register',
+        name: '회원가입',
+        component: () => import('@/views/pages/Register.vue'),
         meta: { unauthorized: true }
     },
     {

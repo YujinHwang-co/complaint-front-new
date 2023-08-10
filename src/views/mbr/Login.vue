@@ -15,7 +15,7 @@
                     </CInputGroupText>
                     <CFormInput
                         ref="mbrId"
-                        placeholder="ID(회사 이메일)"
+                        placeholder="ID(또는 Email)"
                         autocomplete="username"
                         v-model="this.mbrId"
                         @keyup.enter="this.onSubmit()"
@@ -63,9 +63,7 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <CButton color="light" variant="outline" class="mt-3">
-                    Register Now!
-                  </CButton>
+                  <CButton color="light" variant="outline" class="mt-3" @click="this.register()"> Register Now! </CButton>
                 </div>
               </CCardBody>
             </CCard>
@@ -110,6 +108,9 @@ export default {
             }
           })
           .catch((error) => console.log(error));
+    },
+    register() {
+      this.$router.push({name: "회원가입"});
     }
   },
   created() {
