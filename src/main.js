@@ -19,6 +19,9 @@ import {AgGridVue} from "ag-grid-vue3"
 import "ag-grid-community/styles/ag-grid.css"
 import "ag-grid-community/styles/ag-theme-balham.css"
 
+// 다음 주소검색 component
+import DaumAddr from '@/components/common/DaumAddr.vue'
+
 const app = createApp(App)
 app.use(store)
 app.use(router)
@@ -32,5 +35,7 @@ app.component('AgGridVue', AgGridVue)
 app.component('Datepicker', Datepicker)
 // pagination
 app.component('Paginate', Paginate)
+// 다음 주소 검색
+app.component('DaumAddr', DaumAddr)
 
 app.mount('#app')
