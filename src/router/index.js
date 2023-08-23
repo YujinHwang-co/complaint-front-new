@@ -27,16 +27,16 @@ const routes = [
                 component: () =>
                     import(/* webpackChunkName: "dashboard" */ '@/views/Dashboard.vue'),
             },
-            // {
-            //     path: '/admin/mgr/info/mgrInfo',
-            //     name: '운영자 관리',
-            //     component: () => import('@/views/admin/mgr/info/mgrInfo.vue'),
-            // },
-            // {
-            //     path: '/admin/mgr/info/mgrInfoDetail/:mode/:mngrSn?',
-            //     name: '운영자 관리 상세',
-            //     component: () => import('@/views/admin/mgr/info/mgrInfoDetail.vue'),
-            // },
+            {
+                path: '/map/mainMap',
+                name: '메인 지도',
+                component: () => import('@/views/map/mainMap.vue'),
+            },
+            {
+                path: '/mbr/mngMbr',
+                name: '회원 관리',
+                component: () => import('@/views/mbr/mngMbr.vue'),
+            },
         ],
     },
 ]

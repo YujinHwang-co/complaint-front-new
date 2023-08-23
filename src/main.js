@@ -17,7 +17,7 @@ import Paginate from 'vuejs-paginate-next'
 
 import {AgGridVue} from "ag-grid-vue3"
 import "ag-grid-community/styles/ag-grid.css"
-import "ag-grid-community/styles/ag-theme-balham.css"
+import "ag-grid-community/styles/ag-theme-alpine.css"
 
 // 다음 주소검색 component
 import DaumAddr from '@/components/common/DaumAddr.vue'

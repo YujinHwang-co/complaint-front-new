@@ -25,21 +25,20 @@
     <!-- sidebar 추가 개발하기-->
     <CSidebarNav>
       <li class="nav-title">Complaint</li>
-      <CNavItem href="/">
+      <CNavItem href="#" @click="this.dashboard">
         <CIcon  customClassName="nav-icon" icon="cil-speedometer"/>
         Dashboard
       </CNavItem>
-      <CNavItem href="#">
-        <CIcon  customClassName="nav-icon" icon="cil-speedometer"/>
-        With badge
-        <CBadge color="primary ms-auto">Badge</CBadge>
+      <CNavItem href="#" @click="this.mainMap">
+        <CIcon customClassName="nav-icon" icon="cil-speedometer"/>
+        메인 지도
       </CNavItem>
       <CNavGroup>
         <template #togglerContent>
           <CIcon  customClassName="nav-icon" icon="cil-settings"/> Nav dropdown
         </template>
-        <CNavItem href="#">
-          <CIcon  customClassName="nav-icon" icon="cil-settings"/> Nav dropdown item
+        <CNavItem href="#" @click="this.mngMbr">
+          <CIcon  customClassName="nav-icon" icon="cil-settings"/> 회원 관리
         </CNavItem>
         <CNavItem href="#">
           Nav dropdown item
@@ -77,6 +76,15 @@ export default {
     myInfo() {
       this.$router.push({name: "정보수정"});
     },
+    dashboard() {
+      this.$router.push({name: "Dashboard"});
+    },
+    mainMap() {
+      this.$router.push({name: "메인 지도"});
+    },
+    mngMbr() {
+      this.$router.push({name: "회원 관리"});
+    }
   },
   created(){
     // console.log(this.$store.state);

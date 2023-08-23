@@ -1,16 +1,32 @@
 import axios from '../index'
 
-
-
+function getMbrInfo(params) {
+    return axios.get('/api/mbr/getMbrInfo', params)
+}
 function insertMbrInfo(formData) {
     return axios({
         method: "post",
-        url: "/api/insertMbrInfo",
+        url: "/api/mbr/insertMbrInfo",
         header: { 'Content-Type': 'multipart/form-data' },
         data: formData
     });
 }
 
+function updateMbrInfo(formData) {
+    return axios({
+        method: "post",
+        url: "/api/mbr/updateMbrInfo",
+        header: { 'Content-Type': 'multipart/form-data' },
+        data: formData
+    });
+}
+function deleteMbrInfo(params) {
+    return axios.post('/api/mbr/deleteMbrInfo', params)
+}
+
 export default {
+    getMbrInfo,
     insertMbrInfo,
+    updateMbrInfo,
+    deleteMbrInfo
 }

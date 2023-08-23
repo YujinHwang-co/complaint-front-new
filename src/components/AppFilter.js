@@ -66,7 +66,7 @@ export default {
       (ipl & 255)
     )
   },
-  setCurrencyComma(value) {
+  setComma(value) {
     // 숫자 천단위 comma찍기
     var num = new Number(value)
     return num.toFixed(0).replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, '$1,')

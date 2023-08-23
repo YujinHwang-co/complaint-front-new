@@ -72,7 +72,6 @@
 <script>
 // api import
 import mbrInfoApi from "@/api/mbr/api_mbrInfo";
-import daumAddr from "@/components/common/DaumAddr.vue";
 export default {
   name: 'Register',
   data() {
@@ -82,9 +81,6 @@ export default {
 
     }
 
-  },
-  components: {
-    daumAddr
   },
   methods: {
     // 저장할 데이터 parameter
@@ -108,6 +104,7 @@ export default {
           if (response.data.statusCode == 1) {
             alert("회원가입이 정상적으로 처리되었습니다.");
             window.history.pushState(null, null, null);
+            this.$router.push({name: "Login"});
           } else {
             alert(response.data.statusMsg);
             return false;
