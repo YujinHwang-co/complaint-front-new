@@ -26,6 +26,7 @@
     "vue-class-component": "^8.0.0-rc.1",
     "vue-router": "^4.2.4",
     "vue-tree-nav": "^0.0.16",
+    "vue3-naver-maps": "^4.2.0",
     "vue3-perfect-scrollbar": "^1.6.1",
     "vue3-tree": "^0.11.5",
     "vuejs-paginate-next": "^1.0.2",
