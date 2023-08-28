@@ -22,12 +22,15 @@ import "ag-grid-community/styles/ag-theme-alpine.css"
 // 다음 주소검색 component
 import DaumAddr from '@/components/common/DaumAddr.vue'
 // 네이버 지도
-import { NaverMap } from "vue3-naver-maps";
+import {NaverMap} from "vue3-naver-maps";
+
 const app = createApp(App)
 app.use(store)
 app.use(router)
 app.use(CoreuiVue)
 app.use(PerfectScrollbar)
+// 네이버 지도
+app.use(NaverMap, {clientId: 'mjeol7mns5', subModules:'geocoder'})
 app.provide('icons', icons)
 app.component('CIcon', CIcon)
 // AgGrid
@@ -38,7 +41,4 @@ app.component('Datepicker', Datepicker)
 app.component('Paginate', Paginate)
 // 다음 주소 검색
 app.component('DaumAddr', DaumAddr)
-// 네이버 지도
-app.component('NaverMap', NaverMap)
-
 app.mount('#app')
