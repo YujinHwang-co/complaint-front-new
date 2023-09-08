@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+import AppFilter from "@/components/AppFilter";
 
 import CoreuiVue from '@coreui/vue'
 import {PerfectScrollbar} from "vue3-perfect-scrollbar"
@@ -41,4 +41,6 @@ app.component('Datepicker', Datepicker)
 app.component('Paginate', Paginate)
 // 다음 주소 검색
 app.component('DaumAddr', DaumAddr)
+
+app.config.globalProperties.$filters = AppFilter
 app.mount('#app')

@@ -46,7 +46,7 @@
                   <CInputGroupText>
                     <CIcon icon="cil-lock-locked" />
                   </CInputGroupText>
-                  <CFormInput type="password" placeholder="Repeat password"/>
+                  <CFormInput v-model="this.regiItem.passwordChk" type="password" placeholder="Repeat password"/>
                 </CInputGroup>
                 <div class="d-grid">
                   <CButton color="success" @click="this.insertMbrInfo">Create Account</CButton>
@@ -99,6 +99,10 @@ export default {
     },
     // insert(register) member
     insertMbrInfo: function () {
+      if( !this.validationChk() ){
+        return false;
+      }
+
       mbrInfoApi.insertMbrInfo(this.setSaveParams())
         .then((response) => {
           if (response.data.statusCode == 1) {
@@ -111,6 +115,34 @@ export default {
           }
         })
         .catch((error) => console.log(error));
+    },
+    // validation 체크
+    validationChk: function() {
+      let chkBool = true;
+
+      if(this.$filters.nvl(this.regiItem.mbrId, "") == "") {
+        alert("회원ID를 입력해주세요.");
+        return !chkBool;
+      }
+      if(this.$filters.nvl(this.regiItem.mbrNm, "") == "") {
+        alert("회원 이름을 입력해주세요.");
+        return !chkBool;
+      }
+      if(!this.$filters.getTelNumValidation(this.regiItem.mbtlnum)) {
+        alert("전화번호 형식이 옳바르지 않습니다.\n확인 후 재입력 해주세요.");
+        return !chkBool;
+      }
+      if(this.$filters.nvl(this.regiItem.password, "") == "") {
+        alert("비밀번호를 입력해주세요.");
+        return !chkBool;
+      }
+      if(this.regiItem.password != this.regiItem.passwordChk) {
+        alert("입력한 비밀번호가 다릅니다.")
+        return !chkBool;
+      }
+
+      return chkBool;
+
     },
     // 주소 검색 후 callback 함수
     addrCallback: function (data) {
