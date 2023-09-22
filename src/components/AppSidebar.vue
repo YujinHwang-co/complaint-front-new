@@ -35,7 +35,7 @@
       </CNavItem>
       <CNavGroup>
         <template #togglerContent>
-          <CIcon  customClassName="nav-icon" icon="cil-settings"/> Nav dropdown
+          <CIcon  customClassName="nav-icon" icon="cil-settings"/> 운영자 관리
         </template>
         <CNavItem href="#" @click="this.mngMbr">
           <CIcon  customClassName="nav-icon" icon="cil-settings"/> 회원 관리

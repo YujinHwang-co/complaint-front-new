@@ -1,5 +1,8 @@
 import axios from '../index'
 
+function listMbrInfo(params) {
+    return axios.get('/api/mbr/listMbrInfo', params)
+}
 function getMbrInfo(params) {
     return axios.get('/api/mbr/getMbrInfo', params)
 }
@@ -25,6 +28,7 @@ function deleteMbrInfo(params) {
 }
 
 export default {
+    listMbrInfo,
     getMbrInfo,
     insertMbrInfo,
     updateMbrInfo,
